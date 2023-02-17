@@ -1,6 +1,15 @@
 package com.example1.demo1.Product;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class modeProduct {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
     private int year;
@@ -9,8 +18,8 @@ public class modeProduct {
 
     public modeProduct() {}
 
-    public modeProduct(long id, String name, int year, double price, String url) {
-        this.id = id;
+    public modeProduct(long id,String name, int year, double price, String url) {
+        this.id=id;
         this.name = name;
         this.year = year;
         this.price = price;
