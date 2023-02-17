@@ -19,6 +19,9 @@ public class Database {
                 System.out.println("insert data : " + repository.save(modeA));
                 System.out.println("insert data : " + repository.save(modeB));
 
+
+
+
             }
         };
     }
